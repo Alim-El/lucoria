@@ -120,7 +120,7 @@ body {
   right: -100%;
   transition: .3s;
   z-index: 1;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .header__menu-item {
