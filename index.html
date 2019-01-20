@@ -18,7 +18,7 @@
 
     <menu id="menu" class="header__menu">
       <ul class="header__menu-inner">
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Главная</a></li>
+        <li class="header__menu-item"><a href="#" class="active header__menu-link">Главная</a></li>
         <li class="header__menu-item"><a href="#" class="header__menu-link">О нас</a></li>
         <li class="header__menu-item"><a href="#" class="header__menu-link">Продукция</a></li>
         <li class="header__menu-item"><a href="#" class="header__menu-link">Производство</a></li>
@@ -81,6 +81,18 @@
             <h2 class="title section-products__title">наша продукция</h2>
 
             <div class="products">
+
+              <div class="products__menu">
+                <ul class="produsts__menu-inner">
+                  <li class="product__menu-item"><a class="active product__menu-link" href="#">Бобы и кукуруза</a></li>
+                  <li class="product__menu-item"><a class="product__menu-link" href="#">Огурцы</a></li>
+                  <li class="product__menu-item"><a class="product__menu-link" href="#">Томаты</a></li>
+                  <li class="product__menu-item"><a class="product__menu-link" href="#">Грибы</a></li>
+                  <li class="product__menu-item"><a class="product__menu-link" href="#">Ананасы</a></li>
+                  <li class="product__menu-item"><a class="product__menu-link" href="#">Варенье</a></li>
+                </ul>
+              </div>
+
               <select class="products__select" name="" id="">
                 <option value="">Варенье</option>
                 <option value="">Ананасы</option>
@@ -93,7 +105,7 @@
                   <img class="product__img" src="img/lucoria-090.png" alt="">
 
                   <div class="product__descrip">
-                    <span class="product__name">Фасоль красная консервированная</span>
+                    <span class="text product__name">Фасоль красная консервированная</span>
                     <a class="button product__more-btn" href="#">ПОДРОБНЕЕ</a>
                   </div>
 
@@ -103,7 +115,7 @@
                   <img class="product__img" src="img/lucoria-094.png" alt="">
 
                   <div class="product__descrip">
-                      <span class="product__name">Зеленый горошек консервированный ГОСТ</span>
+                      <span class="text product__name">Зеленый горошек консервированный ГОСТ</span>
                       <a class="button product__more-btn" href="#">ПОДРОБНЕЕ</a>
                   </div>
                 </div>
@@ -112,7 +124,7 @@
                   <img class="product__img" src="img/lucoria-083.png" alt="">
                   
                   <div class="product__descrip">
-                    <span class="product__name">Фасоль красная консервированная</span>
+                    <span class="text product__name">Фасоль красная консервированная</span>
                     <a class="button product__more-btn" href="#">ПОДРОБНЕЕ</a>
                   </div>
                 </div>
@@ -121,41 +133,79 @@
                   <img class="product__img" src="img/lucoria-095.png" alt="">
                   
                   <div class="product__descrip">
-                    <span class="product__name">Фасоль красная консервированная</span>
+                    <span class="text product__name">Фасоль красная консервированная</span>
                     <a class="button product__more-btn" href="#">ПОДРОБНЕЕ</a>
                   </div>
+                </div>
+
+                <div class="products__items-item">
+                    <img class="product__img" src="img/lucoria-095.png" alt="">
+                    
+                    <div class="product__descrip">
+                      <span class="text product__name">Фасоль красная консервированная</span>
+                      <a class="button product__more-btn" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+
+                <div class="products__items-item">
+                      <img class="product__img" src="img/lucoria-095.png" alt="">
+                      
+                      <div class="product__descrip">
+                        <span class="text product__name">Фасоль красная консервированная</span>
+                        <a class="button product__more-btn" href="#">ПОДРОБНЕЕ</a>
+                      </div>
+                </div>
+
+                <div class="products__items-item">
+                        <img class="product__img" src="img/lucoria-095.png" alt="">
+                        
+                        <div class="product__descrip">
+                          <span class="text product__name">Фасоль красная консервированная</span>
+                          <a class="button product__more-btn" href="#">ПОДРОБНЕЕ</a>
+                        </div>
+                </div>
+
+                <div class="products__items-item">
+                          <img class="product__img" src="img/lucoria-095.png" alt="">
+                          
+                          <div class="product__descrip">
+                            <span class="text product__name">Фасоль красная консервированная</span>
+                            <a class="button product__more-btn" href="#">ПОДРОБНЕЕ</a>
+                          </div>
                 </div>
               </div>
             </div>
 
-            <a class="button section-product__download-btn" href="#">скачайте каталог продукции</a>
+            <a class="button section-product__download-btn" href="#">скачайте полный каталог продукции</a>
         </div>
     </section>
 
     <section id="section-about" class="section-about">
       <div class="conteiner section-about__conteiner">
-        <h2 class="title section-about__title">Производство</h2>
-        <span class="subtitle section-about__subtitle">на уровне мировых стандартов</span>
+        <div class="section-about__inner">
+          <h2 class="title section-about__title">Производство</h2>
+          <span class="subtitle section-about__subtitle">на уровне мировых стандартов</span>
 
-        <div class="section-about__descrip">
-          <p class="section-about__descrip-text">
-            Выпуская свою продукцию на рынок, мы отвечает за ее качество на 100%. На всех стадиях производства осуществляется тотальный контроль.  Продукция «ЛУКОРИЯ» не содержит консервантов, красителей, ГМО и других опасных для здоровья компонентов. Продукты сертифицированы и изготовлены строго по ГОСТ.  
-          </p><br>
+          <div class="section-about__descrip">
+            <p class="section-about__descrip-text">
+              Выпуская свою продукцию на рынок, мы отвечает за ее качество на 100%. На всех стадиях производства осуществляется тотальный контроль.  Продукция «ЛУКОРИЯ» не содержит консервантов, красителей, ГМО и других опасных для здоровья компонентов. Продукты сертифицированы и изготовлены строго по ГОСТ.  
+            </p><br>
 
-          <p class="section-about__descrip-text">
-              Для «ЛУКОРИЯ» тщательно подбираются заводы-изготовители. Так, наши производственные площади находятся:<br>  
-              - России (Краснодарском крае, Ростовской области).<br>
-              - Китае<br>
-              - ******<br> 
-              - *******<br>  
-          </p><br>
+            <p class="section-about__descrip-text">
+                Для «ЛУКОРИЯ» тщательно подбираются заводы-изготовители. Так, наши производственные площади находятся:<br>  
+                - России (Краснодарском крае, Ростовской области).<br>
+                - Китае<br>
+                - ******<br> 
+                - *******<br>  
+            </p><br>
 
-          <p class="section-about__descrip-text">
-            Благодаря интеграции опыта производителей со всего мира, мы смогли максимально приблизить вкус продукции «ЛУКОРИЯ» к домашним заготовкам.
-          </p>
+            <p class="section-about__descrip-text">
+              Благодаря интеграции опыта производителей со всего мира, мы смогли максимально приблизить вкус продукции «ЛУКОРИЯ» к домашним заготовкам.
+            </p>
+          </div>
+
+          <a class="button section-about__detial-btn" href="">ПОЛУЧИТЬ ПОДРОБНУЮ ИНФОРМАЦИЮ</a>
         </div>
-
-        <a class="button section-about__detial-btn" href="">ПОЛУЧИТЬ ПОДРОБНУЮ ИНФОРМАЦИЮ</a>
       </div>
     </section>
   </main>

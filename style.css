@@ -13,6 +13,14 @@ body {
   color: white;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .conteiner {
   width: 100%;
   margin: 0 auto;
@@ -31,7 +39,6 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-  /* font-weight: normal; */
 }
 
 .text {
@@ -53,6 +60,10 @@ body {
 
 .button:hover {
   background-color: #000;
+}
+
+.products__menu {
+  display: none;
 }
 
 
@@ -135,10 +146,10 @@ body {
   color: #fff;
 }
 
+.active,
 .header__menu-link:hover {
   color: #87703F;
   border-bottom: 2px solid #87703F;
-  margin-bottom: -2px;
 }
 
 .menu-close:hover {
@@ -311,12 +322,15 @@ body {
 
 /*========== SECTION-PRODUCTS ==========*/
 
+.section-products {
+  background-image: url(img/product-bg.png);
+}
 
 .section-products__conteiner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(img/product-bg.png);
+  justify-content: center;
 }
 
 .section-products__title {
@@ -345,7 +359,7 @@ body {
 .products__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 0 10px;
 }
 
 .products__items-item {
@@ -353,8 +367,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  margin-top: 35px;
+  justify-content: center;
+  margin-top: 55px;
   cursor: pointer;
 }
 
@@ -363,20 +377,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .product__img {
-  width: 105px;
+  height: 120px;
   margin-bottom: 30px;
 }
 
 .product__name {
+  height: 45px;
   color: #242322;
 }
 
-.product__more-btn {
-  margin: 0 20px;
-}
 
 .section-product__download-btn {
   margin: 55px 0;
@@ -386,13 +399,21 @@ body {
 
 .section-about {
   background: url(img/mushrooms.png) no-repeat;
-  display: none;
+  background-size: cover;
 }
 
 .section-about__conteiner {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-about__inner {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding-left: 37px; 
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -401,8 +422,9 @@ body {
 }
 
 .section-about__descrip {
-  max-width: 350px;
-  margin: 0 5px 0 15px;
+  max-width: 450px;
+  margin: 35px 0 15px;
+
 }
 
 .section-about__detial-btn {
@@ -414,21 +436,16 @@ body {
 @media only screen and (min-width: 641px) {
 
   .button {
-    display: inline-block;
-    padding: 15px 25px;
-    margin: 0;
-    background-color: #87703F;
     font-size: 16px;
-    text-decoration: none;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-transform: uppercase;
   }
 
   .title {
     font-size: 48px;
     line-height: 55px;
+  }
+
+  .subtitle {
+    font-size: 48px;
   }
   
   /* SECTION_PRESENT */
@@ -451,7 +468,6 @@ body {
   }
 
   .section-present__subtitile-top,
-  .section-present__title,
   .section-present__subtitile-bottom {
     font-size: 25px;
     line-height: 30px;
@@ -468,6 +484,51 @@ body {
 
   .header__menu-phone {
     font-size: 24px;
+  }
+
+  /* SECTION-PRODUCTS */
+
+  .section-products__conteiner {
+    padding: 85px 0 115px;
+  }
+
+  .products__items-item {
+    width: 33%;
+  }
+
+  .product__img {
+    height: 190px; 
+  }
+
+  .section-product__download-btn {
+    margin-top: 70px;
+  }
+
+
+  /* SECTION-ABOUT */
+
+  .section-about {
+    padding: 85px 0 115px;
+  }
+
+  .section-about__conteiner {
+    justify-content: right;
+    padding-right: 15px; 
+  }
+
+  .section-about__inner {
+    width: 600px;
+    align-items: flex-start;
+  }
+
+  .section-about__title,
+  .section-about__subtitle {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .section-about__descrip {
+    margin-left: 0;
   }
 
 }
@@ -491,6 +552,10 @@ body {
 @media only screen and (min-width: 961px) {
   .conteiner {
     max-width: 960px;
+  }
+
+  .button {
+    padding: 15px 25px;
   }
 
   .text {
@@ -591,8 +656,76 @@ body {
 
   .section-more__descrip-img {
     width: 460px;
-    /* height: 480px; */
   }
+
+  /* SECTION-PRODUCTS */
+  .products__menu {
+    display: block;
+  }
+
+  .products__select {
+    display: none;
+  }
+
+  .produsts__menu-inner {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 55px;
+  }
+
+  .product__menu-item {
+    padding-right: 18px;
+    margin-right: 18px;
+    border-right: 2px solid #242322;
+    font-size: 24px;
+  }
+
+  .product__menu-item:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+  }
+
+  .product__menu-link {
+    color: #242322;
+  }
+
+  .active,
+  .product__menu-link:hover {
+    color: #87703F;
+    border-bottom: 2px solid #87703F;
+  }
+
+  .product__more-btn {
+    display: none;
+  }
+
+
+  .product__name {
+    margin-bottom: 35px;
+  }
+
+  .products__items-item {
+    margin-top: 15px;
+    padding: 0 0 30px;
+    height: 430px;
+  }
+
+  .products__items-item:hover {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: -1px 0 29px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.products__items-item:hover .product__more-btn {
+  display: block;
+  margin-bottom: 34px;
+}
 
 }
 
@@ -629,6 +762,7 @@ body {
   
   .header__menu-call-btn {
     display: block;
+    margin: 0;
     margin-left: 25px;
   }
 }
