@@ -413,7 +413,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-left: 37px; 
+  padding: 0 15px; 
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -518,6 +518,8 @@ a {
 
   .section-about__inner {
     width: 600px;
+    padding: 0;
+    padding-left: 37px; 
     align-items: flex-start;
   }
 
