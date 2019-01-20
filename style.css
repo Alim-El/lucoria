@@ -46,6 +46,10 @@ a {
   line-height: 17px;
 }
 
+.black-txt {
+  color: #242322;
+}
+
 .button {
   display: inline-block;
   padding: 10px 15px;
@@ -432,7 +436,87 @@ a {
 }
 
 
+/*======== SECTION-REASONS =========*/
 
+.section-reasons {
+  padding: 45px 0 50px;
+}
+
+.section-reasons__conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-reasons__title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.section-reasons__descrip {
+  max-width: 900px;
+  padding: 25px 15px 45px;
+  text-align: center;
+}
+
+
+.section-reasons__descrip-title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+.section-reasons__item {
+  width: 300px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+
+.section-reasons__item-descrip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-reasons__item-title {
+  display: block;
+  width: 200px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.section-reasons__btn {
+  margin-top: 50px;
+}
+
+/* ================== SECTION-REQUEST ==================*/
+
+.section-request {
+  background: url(img/req-bg.png) no-repeat;
+}
+
+.section-request__conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-request__logo {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+/* ======================================================== */
 @media only screen and (min-width: 641px) {
 
   .button {
@@ -446,6 +530,11 @@ a {
 
   .subtitle {
     font-size: 48px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 17px;
   }
   
   /* SECTION_PRESENT */
@@ -531,6 +620,45 @@ a {
 
   .section-about__descrip {
     margin-left: 0;
+  }
+
+  /*======== SECTION-REASONS =========*/
+
+  .section-reasons {
+    padding: 110px 0 100px;
+  }
+
+  .section-reasons__descrip-title {
+    font-size: 24px;
+  }
+
+  .section-reasons__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+
+  .section-reasons__item {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+    text-align: left;
+  }
+
+  .section-reasons__item-img {
+    margin-right: 20px;
+  }
+
+  .section-reasons__item-descrip {
+    align-items: flex-start;
+  }
+
+  .section-reasons__item-title {
+    width: 100%;
+    margin-top: 0;
   }
 
 }
@@ -748,8 +876,6 @@ a {
     margin-top: 50px;
   }
 }
-
-
 
 @media only screen and (min-width: 1271px) {
 
