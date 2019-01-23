@@ -422,7 +422,7 @@ a {
 /*======== SECTION-ABOUT ========*/
 
 .section-about {
-  background: url(img/mushrooms.png) no-repeat;
+  background: url(img/mushrooms.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -517,7 +517,7 @@ a {
 /* ================== SECTION-REQUEST ==================*/
 
 .section-request {
-  background: url(img/req-bg.png) no-repeat;
+  background: url(img/req-bg.jpg) no-repeat;
   background-size: cover;
 }
 

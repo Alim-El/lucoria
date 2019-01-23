@@ -106,20 +106,3 @@ $("html, body").animate({
   $(document).on("scroll", onScroll);
   });
 });
-
-
-
-// $('.header__menu-inner li').each(function() {
-//   if ('https://alim-kbr.github.io/lucoria/'+$(this).attr('href') === window.location.href)
-//   {
-//       $(this).addClass('active');
-//   }
-// });
-
-
-
-
-
-
-
-
