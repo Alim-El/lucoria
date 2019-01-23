@@ -77,6 +77,14 @@ $('a[href*="#"]').click(function() {
 });
 
 
+$('.header__menu-inner li a').each(function() {
+  if ('https://alim-kbr.github.io/lucoria/'+$(this).attr('href') === window.location.href)
+  {
+      $(this).addClass('active');
+  }
+});
+
+
 
 
 
